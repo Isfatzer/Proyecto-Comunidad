@@ -29,6 +29,7 @@ namespace Proyecto_Comunidad
             InitializeComponent();
         }
 
+        //boton que carga  todos los archivos
         private void button1_Click(object sender, EventArgs e)
         {
             //lee el primer archivo (Comunidad)
@@ -169,6 +170,36 @@ namespace Proyecto_Comunidad
                 Lpagos.Add(pag);
             }
             leer5.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = Lcomunidad;
+            dataGridView1.Refresh();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = Lgastos;
+            dataGridView1.Refresh();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = Lpropietarios;
+            dataGridView1.Refresh();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = Lpropiedades;
+            dataGridView1.Refresh();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = Lpagos;
+            dataGridView1.Refresh();
         }
     }
 }
