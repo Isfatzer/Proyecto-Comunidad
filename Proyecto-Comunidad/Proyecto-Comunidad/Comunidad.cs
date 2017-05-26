@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Proyecto_Comunidad
 {
-    class Comunidad
+    class Comunidad 
     {
         int identificacion;
         string nombre;
